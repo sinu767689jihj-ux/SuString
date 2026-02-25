@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class SubStringElementsRepresentingMethod1{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the String");
+        String s=sc.nextLine();
+        int n=s.length();
+        //implement the logic to find the all SubArrays
+        //implement the logic to find the all SubArrays
+        /*1 length elements->[1],[2],[3],[4],[5].Index position(0 to 0),(1 to 1),(2 to 2),(3 to 3),(4 to 4).
+        2 length elements->[1,2],[2,3],[3.4],[4,5].Index position(0 to 1),(1 to 2),(2 to 3),(3 to 4).
+        3 length elements->[1,2,3],[2,3,4],[3,4,5].Index position(0 to 2),(1 to 3),(2 to 4).
+        4 length elements->[1,2,3,4],[2,3,4,5].Index position(0 to 3),(1 to 4).
+        5 length elements->[1,2,3,4,5].Index position(0 t0 4).
+        */
+
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i;j<n;j++)
+            {
+                //System .out.println(i+" "+j);
+                for(int k=i;k<=j;k++)
+                {
+                    System.out.print(s.charAt(k)+" ");
+                }
+                System.out.println();
+            }
+        }
+        sc.close();
+    }
+}
