@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+public class SubStringUsingArrayList {
+    public static void main(String[] args)
+    {
+        ArrayList<String> al=new ArrayList<>();
+        String s="Srinu";
+        int n=s.length();
+        String temp="";
+        for(int i=0;i<n;i++)
+            {
+                for(int j=i;j<n;j++)
+                {
+                    temp=s.substring(i,j+1);//substring(start index,end index):end index prints till end index-1.
+                    al.add(temp);
+                }
+            }    
+        System.out.println(al);
+    }
+}
