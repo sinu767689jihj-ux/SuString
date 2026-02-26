@@ -1,0 +1,19 @@
+public class SubString{
+    public static void main(String[] args)
+    {
+        String s="xyzzaz";
+        int l=0,r=0;
+        String ans="";
+        String temp="";
+        int sl=3;
+        int n=s.length();
+        for(r=0;r<n;r++)
+        {
+            if(r-l+1==sl&&)
+            {
+                System.out.println(s.substring(l,r+1));
+                l++;
+            }
+        }
+    }
+}
